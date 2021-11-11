@@ -9,7 +9,7 @@ title: User Guide
 
 Track-O  is a **free desktop application** built for freelance tutors in Singapore. You can use Track-O to manage your tutee’s information, schedule lessons, track their payments, and many other functions. This application uses a command line interface; this means that you operate the application by typing commands.
 
-It is available for Ubuntu, Windows and macOS operating systems.
+It is available for Windows, macOS and Linux operating systems.
 
 --------------------------------------------------------------------------------------------------------------------
 <div style="page-break-after: always;"></div>
@@ -233,6 +233,8 @@ Example:
 #### Listing all tutees : `list`
 
 Shows the full list of tutees stored.
+
+<img src="list_ug.png" width="95%"/>
 
 Format: `list`
 
@@ -526,7 +528,7 @@ It is just a visual difference. Both applications have the same functionalities 
 
 If you do not have Java 11 installed and are unsure of which version to download, refer to the follow steps:
 1. Visit the Oracle website [here](https://www.oracle.com/java/technologies/downloads/#java11).
-2. Scroll down until you see **Java SE Development Kit 11.0.13**. You should see something similar to the image below.
+2. Scroll down until you see **Java SE Development Kit 11.0.13** (your version may vary slightly especially at the last two numbers, but the first number should still be 11). You should see something similar to the image below.
 
     <img src="download_java.png" width="130%"/>
 
