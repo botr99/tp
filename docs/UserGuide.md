@@ -144,6 +144,8 @@ The `help` command provides a link to our user guide.
 
 Format: `help`
 
+<div style="page-break-after: always;"></div>
+
 ### Managing tutee's information
 
 #### Adding a tutee: `add`
@@ -193,6 +195,8 @@ Format: `edit INDEX [n/NAME] [p/PHONE] [sch/SCHOOL] [l/LEVEL] [a/ADDRESS] [t/TAG
 * When editing tags, the existing tags of the tutee will be removed i.e adding of tags is not cumulative.
 * You can remove all the tutee’s tags by typing `t/` without specifying any tags after it.
 
+<div style="page-break-after: always;"></div>
+
 Examples:
 * `edit 1 p/91234567 a/345 Bedok North Ave 3` Edits the phone number and address of the 1st tutee to be `91234567` and `345 Bedok North Ave 3` respectively.
 * `edit 2 n/Betty Chan t/` Edits the name of the 2nd tutee to be `Betty Chan` and clears all existing tags.
@@ -216,6 +220,8 @@ only tutees which fulfills **all** keywords will be returned.
 * `level` filter can only take **1 keyword** in the form of abbreviation.<br>
   e.g. `p5` for Primary 5, `s2` for Secondary 2
 * `overdue` filter can only take **1 keyword**, either `yes` or `no`.
+
+<div style="page-break-after: always;"></div>
 
 Example:
 * Find all tutees with name containing `David` in the tutee list: `find n/david`.
@@ -264,6 +270,8 @@ Format: `remark INDEX r/TEXT`
 
 Examples:
 * `remark 1 r/Went through Organic Chemistry`
+
+<div style="page-break-after: always;"></div>
 
 #### Clearing all remarks of a tutee: `clearremark`
 
