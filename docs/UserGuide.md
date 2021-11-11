@@ -355,9 +355,9 @@ Note that Track-O keeps track of fees up to $100,000, any payment command that r
 
 You can retrieve all the payment details of a specific tutee including their fees and the payment due dates.
 
-Format: `payment INDEX`
-
 <img src="payment_ug.png" width="95%"/>
+
+Format: `payment INDEX`
 
 * Retrieves the payment details of the tutee at the specified `INDEX`.
 * The index refers to the index number tagged to each tutee in the currently displayed tutee list.
@@ -372,9 +372,9 @@ Examples:
 
 After finishing a lesson with your tutee, Track-O calculates the fees you should collect for that lesson.
 
-Format: `payment INDEX lesson/LESSON_INDEX`
-
 <img src="payment_lesson_ug.png" width="95%"/>
+
+Format: `payment INDEX lesson/LESSON_INDEX`
 
 * Adds the fees of the specified lesson at `LESSON_INDEX` to the specified tutee's payment details at `INDEX`.
 * The index refers to the index number tagged to each tutee in the currently displayed tutee list.
@@ -392,9 +392,9 @@ Examples:
 
 You can manually edit a tutee’s payment amount due if you made a mistake for their fees.
 
-Format: `payment INDEX amount/AMOUNT`
-
 <img src="payment_amount_ug.png" width="95%"/>
+
+Format: `payment INDEX amount/AMOUNT`
 
 * Changes the payment amount due by the specified tutee at `INDEX` to `AMOUNT`.
 * The index refers to the index number tagged to each tutee in the currently displayed tutee list.
@@ -412,9 +412,9 @@ Examples:
 
 To help you with ensuring timely payment, you can set payment due dates for individual tutees. 
 
-Format: `payment INDEX by/DUE_DATE`
-
 <img src="payment_due_ug.png" width="95%"/>
+
+Format: `payment INDEX by/DUE_DATE`
 
 * Changes the payment due date of the specified tutee at `INDEX` to `DUE_DATE`.
 * The index refers to the index number tagged to each tutee in the currently displayed tutee list.
@@ -431,9 +431,9 @@ Examples:
 
 If your tutee has paid his fees, you can clear all outstanding fees and set the next date to collect fees by.
 
-Format: `payment INDEX receive/[DUE_DATE]`
-
 <img src="payment_receive_ug.png" width="95%"/>
+
+Format: `payment INDEX receive/[DUE_DATE]`
 
 * Resets the payment amount due of the specified tutee to `0`.
 * Resets the payment due date of the specified tutee at `INDEX` to `-`, or `DUE_DATE` if specified.
