@@ -170,8 +170,7 @@ No longer teaching a tutee? You can remove all their information from Track-O.
 Format: `delete INDEX`
 
 * Deletes the tutee at the specified `INDEX`.
-* The index refers to the index number tagged to each tutee in the currently displayed tutee list.
-* The index must be within the size of the displayed tutee list and **must be a positive integer** 1, 2, 3, …
+* The index refers to the index number in the displayed tutee list.
 
 Examples:
 * `delete 2` deletes the 2nd tutee in the tutee list.
@@ -185,8 +184,7 @@ Made a mistake? No worries, you can always edit any of their details.
 Format: `edit INDEX [n/NAME] [p/PHONE] [sch/SCHOOL] [l/LEVEL] [a/ADDRESS] [t/TAG]…`
 
 * Edits the tutee at the specified `INDEX`.
-* The index refers to the index number tagged to each tutee in the currently displayed tutee list.
-* The index must be within the size of the displayed tutee list and **must be a positive integer** 1, 2, 3, …
+* The index refers to the index number in the displayed tutee list.
 * At least one of the optional fields must be provided.
 * `n/NAME` and `[t/TAG]` can only take in alphanumeric characters and spaces.
 * `p/PHONE` should only take in 8-digit phone numbers.
@@ -243,8 +241,7 @@ Gets the details of a specified tutee from the tutee list.
 Format: `get INDEX`
 
 * Gets the tutee at the specified `INDEX` in the format `Name: John Doe Level: P5`
-* The index refers to the index number tagged to each tutee in the currently displayed tutee list.
-* The index must be within the size of the displayed tutee list and **must be a positive integer** 1, 2, 3, …
+* The index refers to the index number in the displayed tutee list.
 
 Examples:
 * `list` followed by `get 2` shows the 2nd tutee in the tutee list.
@@ -262,8 +259,7 @@ You can track their test scores, lesson progress, and essentially anything you w
 Format: `remark INDEX r/TEXT`
 
 * Adds the desired `TEXT` to the tutee specified at the specified `INDEX`.
-* The index refers to the index number tagged to each tutee in the currently displayed tutee list.
-* The index must be within the size of the displayed tutee list and **must be a positive integer** 1, 2, 3, …
+* The index refers to the index number in the displayed tutee list.
 * Empty remarks and remarks with whitespaces allow you to skip lines when appending.
 
 Examples:
@@ -278,8 +274,7 @@ You can clear all remarks of a tutee and start afresh with new remarks if their 
 Format: `clearremark INDEX`
 
 * Clears all remarks of the tutee specified at the specified `INDEX`.
-* The index refers to the index number tagged to each tutee in the currently displayed tutee list.
-* The index must be within the size of the displayed tutee list and **must be a positive integer** 1, 2, 3, …
+* The index refers to the index number in the displayed tutee list.
 
 Examples:
 * `clearremark 1`
@@ -308,8 +303,7 @@ After successfully adding a lesson to a tutee, it will be displayed as a coloure
 Format: `addlesson INDEX subject/SUBJECT d/DAY_OF_WEEK s/START_TIME e/END_TIME rate/HOURLY_RATE`
 
 * Adds a lesson to the tutee at the specified `INDEX`.
-* The index refers to the index number tagged to each tutee in the currently displayed tutee list.
-* The index must be within the size of the displayed tutee list and **must be a positive integer** 1, 2, 3, …
+* The index refers to the index number in the displayed tutee list.
 * The lesson occurs on the specified `DAY_OF_WEEK`, from the specified `START_TIME` to the specified `END_TIME`, costing `HOURLY_RATE` dollars per hour.
 * `DAY_OF_WEEK` **must be an integer in the range [1, 7]** where `1` to `7` corresponds to Monday to Sunday.
 * `START_TIME` and `END_TIME` must be specified in an `HH:MM` format.
@@ -334,8 +328,7 @@ If you are no longer teaching a specific lesson with your tutee, you can remove 
 
 Format: `deletelesson TUTEE_INDEX lesson/LESSON_INDEX`
 
-* The index refers to the index number tagged to each tutee in the currently displayed tutee list.
-* The index must be within the size of the displayed tutee list and **must be a positive integer** 1, 2, 3, …
+* The index refers to the index number in the displayed tutee list.
 * The lesson index is the number displayed beside the subject name after using `get` command on the tutee.
 * `TUTEE_INDEX` and `LESSON_INDEX` are compulsory fields, an error message is produced if either one is missing.
 
@@ -360,8 +353,7 @@ You can retrieve all the payment details of a specific tutee including their fee
 Format: `payment INDEX`
 
 * Retrieves the payment details of the tutee at the specified `INDEX`.
-* The index refers to the index number tagged to each tutee in the currently displayed tutee list.
-* The index must be within the size of the displayed tutee list and **must be a positive integer** 1, 2, 3, …
+* The index refers to the index number in the displayed tutee list.
 
 Examples:
 * `payment 1`
@@ -377,14 +369,12 @@ After finishing a lesson with your tutee, Track-O calculates the fees you should
 Format: `payment INDEX lesson/LESSON_INDEX`
 
 * Adds the fees of the specified lesson at `LESSON_INDEX` to the specified tutee's payment details at `INDEX`.
-* The index refers to the index number tagged to each tutee in the currently displayed tutee list.
-* The index must be within the size of the displayed tutee list and **must be a positive integer** 1, 2, 3, …
-* `LESSON_INDEX` must be within the size of the tutee's lesson list and **must be a positive integer** 1, 2, 3, …
+* The index refers to the index number in the displayed tutee list.
+* `LESSON_INDEX` must be within the size of the tutee's lesson list.
 * If the payment amount exceeds $100,000 after adding the lesson fees, Track-O returns an error message.
 
 Examples:
 * `payment 1 lesson/1`
-* `payment 1 lesson/2`
 
 <div style="page-break-after: always;"></div>
 
@@ -397,8 +387,7 @@ You can manually edit a tutee’s payment amount due if you made a mistake for t
 Format: `payment INDEX amount/AMOUNT`
 
 * Changes the payment amount due by the specified tutee at `INDEX` to `AMOUNT`.
-* The index refers to the index number tagged to each tutee in the currently displayed tutee list.
-* The index must be within the size of the displayed tutee list and **must be a positive integer** 1, 2, 3, …
+* The index refers to the index number in the displayed tutee list.
 * `AMOUNT` **must be from 0 to 100,000** expressed in either zero decimal places or two decimal places with the last decimal place (i.e. last digit) being `0` or `5`.
 
 Examples:
@@ -417,8 +406,7 @@ To help you with ensuring timely payment, you can set payment due dates for indi
 Format: `payment INDEX by/DUE_DATE`
 
 * Changes the payment due date of the specified tutee at `INDEX` to `DUE_DATE`.
-* The index refers to the index number tagged to each tutee in the currently displayed tutee list.
-* The index must be within the size of the displayed tutee list and **must be a positive integer** 1, 2, 3, …
+* The index refers to the index number in the displayed tutee list.
 * `DUE_DATE` **must be later than or on the current date** expressed in the `dd-MM-YYYY` format.
 
 Examples:
@@ -438,8 +426,7 @@ Format: `payment INDEX receive/[DUE_DATE]`
 * Resets the payment amount due of the specified tutee to `0`.
 * Resets the payment due date of the specified tutee at `INDEX` to `-`, or `DUE_DATE` if specified.
 * Updates the specified tutee's last paid date in their payment details to the current date.
-* The index refers to the index number tagged to each tutee in the currently displayed tutee list.
-* The index must be within the size of the displayed tutee list and **must be a positive integer** 1, 2, 3, …
+* The index refers to the index number in the displayed tutee list.
 * `DUE_DATE` **must be later than or on the current date** expressed in the `dd-MM-YYYY` format, if specified.
 
 Examples:
