@@ -175,7 +175,7 @@ Format: `delete INDEX`
 * The index refers to the index number in the displayed tutee list.
 
 Examples:
-* `delete 2` deletes the 2nd tutee in the tutee list.
+* `delete 1` deletes the 1st tutee in the tutee list.
 <div style="page-break-after: always;"></div>
 #### Editing a tutee :  `edit`
 
