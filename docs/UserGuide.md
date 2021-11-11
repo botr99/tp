@@ -136,7 +136,7 @@ e.g. `[subject/SUBJECT…]` subject keywords are optional and allows multiple ke
 <div style="page-break-after: always;"></div>
 ### Viewing help : `help`
 
-Shows a message explaining how to access the help page.
+The `help` command provides a link to our user guide.
 
 <p align="center">
     <img src="help_ug.png" width="85%"/>
@@ -148,7 +148,7 @@ Format: `help`
 
 #### Adding a tutee: `add`
 
-Adds a tutee to the existing list of tutees.
+You can add a tutee, together with their personal information, such as their phone number, educational level and school.
 
 <img src="add_ug.png" width="95%"/>
 
@@ -163,7 +163,7 @@ Examples:
 <div style="page-break-after: always;"></div>
 #### Deleting a tutee : `delete`
 
-Deletes the specified tutee from our list of tutees.
+No longer teaching a tutee? You can remove all their information from Track-O.
 
 <img src="delete_ug.png" width="95%"/>
 
@@ -178,7 +178,7 @@ Examples:
 <div style="page-break-after: always;"></div>
 #### Editing a tutee :  `edit`
 
-Edits an existing tutee in the tutee list.
+Made a mistake? No worries, you can always edit any of their details. 
 
 <img src="edit_ug.png" width="95%"/>
 
@@ -203,7 +203,7 @@ Examples:
 
 #### Finding tutee by fields : `find`
 
-Filters the tutee list to display matches according to keywords.
+You can filter through different fields to find tutees based on their `name`, `level`, `subject` and `overdue` status.
 
 <img src="find_ug.png" width="95%"/>
 
@@ -255,8 +255,7 @@ Examples:
 
 #### Adding a remark to a tutee: `remark`
 
-Adds a remark to the specified tutee with the provided `TEXT` input. New remarks will be appended to existing ones on 
-a new line and will not overwrite them.
+You can track their test scores, lesson progress, and essentially anything you wish to take note of.
 
 <img src="remark_ug.png" width="95%"/>
 
@@ -272,7 +271,7 @@ Examples:
 
 #### Clearing all remarks of a tutee: `clearremark`
 
-Clears all remarks of the specified tutee.
+You can clear all remarks of a tutee and start afresh with new remarks if their information gets too cluttered.
 
 <img src="clearremark_ug.png" width="95%"/>
 
@@ -290,7 +289,7 @@ Examples:
 
 #### Tracking lesson schedule : `schedule`
 
-Retrieves your lesson schedule.
+You can see an overview of all your lesson timings for the week, together with who you will be teaching at that time, to help with your planning and coordinating of lessons.
 
 <img src="schedule_ug.png" width="95%"/>
 
@@ -300,7 +299,9 @@ Format: `schedule`
 
 #### Adding a lesson to a tutee : `addlesson`
 
-Adds a lesson to the specified tutee and your current schedule.
+You can add a lesson to your tutee, noting down the subject being taught, time and day, and the hourly rate you are charging. This lesson will be added to your schedule too. 
+
+After successfully adding a lesson to a tutee, it will be displayed as a coloured tag below their name in the tutee list. 
 
 <img src="addlesson_ug.png" width="95%"/>
 
@@ -327,7 +328,7 @@ Examples:
 
 #### Deleting a lesson from a tutee : `deletelesson`
 
-Deletes an existing lesson from your tutee and from your schedule.
+If you are no longer teaching a specific lesson with your tutee, you can remove that lesson from Track-O. This lesson will be removed from your schedule too.
 
 <img src="deletelesson_ug.png" width="95%"/>
 
@@ -352,6 +353,8 @@ Note that Track-O keeps track of fees up to $100,000, any payment command that r
 
 #### Retrieve payment details from tutee: `payment`
 
+You can retrieve all the payment details of a specific tutee including their fees and the payment due dates.
+
 Format: `payment INDEX`
 
 <img src="payment_ug.png" width="95%"/>
@@ -366,6 +369,8 @@ Examples:
 <div style="page-break-after: always;"></div>
 
 #### Adding lesson's fees to a tutee: `… lesson`
+
+After finishing a lesson with your tutee, Track-O calculates the fees you should collect for that lesson.
 
 Format: `payment INDEX lesson/LESSON_INDEX`
 
@@ -385,6 +390,8 @@ Examples:
 
 #### Editing a tutee's payment amount: `… amount`
 
+You can manually edit a tutee’s payment amount due if you made a mistake for their fees.
+
 Format: `payment INDEX amount/AMOUNT`
 
 <img src="payment_amount_ug.png" width="95%"/>
@@ -403,6 +410,8 @@ Examples:
 
 #### Setting a tutee's payment due date: `… by`
 
+To help you with ensuring timely payment, you can set payment due dates for individual tutees. 
+
 Format: `payment INDEX by/DUE_DATE`
 
 <img src="payment_due_ug.png" width="95%"/>
@@ -419,6 +428,8 @@ Examples:
 <div style="page-break-after: always;"></div>
 
 #### Receiving a tutee's payment (and setting a next payment due date): `… receive`
+
+If your tutee has paid his fees, you can clear all outstanding fees and set the next date to collect fees by.
 
 Format: `payment INDEX receive/[DUE_DATE]`
 
@@ -439,11 +450,15 @@ Examples:
 
 ### Clearing all entries : `clear`
 
-Clears the tutee list and your schedule.
+If you want to start afresh, this wipes all current existing data.
 
 <img src="clear_ug.png" width="95%"/>
 
 Format: `clear`
+
+<div markdown="span" class="alert alert-warning">:exclamation: **Caution:**
+Note that this action is irreversible and all existing data will be lost permanently. 
+</div>
 
 ### Exiting application : `exit`
 
