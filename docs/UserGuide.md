@@ -511,7 +511,7 @@ It is just a visual difference. Both applications have the same functionalities 
 <div style="page-break-after: always;"></div>
 
 **Q**: What are tags used for? <br>
-**A**: Tags can be used to indicate important details of the tutee that you would like to see straight from the `tuteelist`. For instance, in the sample data provided, tags were used to indicate important upcoming examinations for tutees such as `PSLE`. 
+**A**: Tags can be used to indicate important details of the tutee that you would like to see straight from the tutee list. For instance, in the sample data provided, tags were used to indicate important upcoming examinations for tutees such as `PSLE`. 
 
 **Q**: What does it mean by a lesson clashing with other lessons in the user's schedule under the section on [adding a lesson to a tutee](#adding-a-lesson-to-a-tutee--addlesson)? Why is it not allowed?<br>
 **A**: A schedule clash means that the lesson added coincides with another lesson in the existing schedule. To resolve this, pick a different day/timing where your schedule is free.
@@ -533,13 +533,16 @@ If you do not have Java 11 installed and are unsure of which version to download
     <img src="download_java.png" width="130%"/>
 
 3. Click on **Java 11**.
-4. Select your own Operating System. You may check your computer's [System Information](https://kb.wisc.edu/helpdesk/page.php?id=8208) for more details.
-5. Download the respective file. (You may need to register for an Oracle account) 
+4. Select your own Operating System. If you are unsure of your operating system, you can check your computer's [System Information](https://kb.wisc.edu/helpdesk/page.php?id=8208).
+5. Download the respective Java 11 installation file. (You may need to register for an Oracle account) 
    1. For macOS users, download the file that ends with **.dmg**.
    2. For Windows users, download the file that ends with **.exe**.
    3. For Linux users, follow the instructions [here](https://docs.oracle.com/en/java/javase/11/install/installation-jdk-linux-platforms.html#GUID-4907E1A6-7B4B-4E98-9DA5-BF2A4D01AA57)
    to download Java 11.
 6. For macOS and Windows users, once the **.dmg** or **.exe** file has been installed, double-click the file and follow the instructions provided to complete the installation.
+
+--------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ### Installing Track-O (macOS)
 
@@ -551,8 +554,8 @@ For macOS users, you may receive an error similar to the one below when double-c
  
 Refer to the following steps to get started using Track-O:
 1. Click on the "OK" to close the pop-up window.
-2. Run **Spotlight** by pressing the Command key and Space Bar at the same time.
-3. Type "Security & Privacy" and hit Enter. You should see a window similar to the one below:
+2. Run **Spotlight** by pressing `⌘Command` + `Space` on your keyboard at the same time.
+3. Type "Security & Privacy" into the search box that pops up and hit Enter. You should see a window similar to the one below:
 
     <p align="center">
         <img src="download_2.png" width="70%"/>
